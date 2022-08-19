@@ -118,7 +118,7 @@ if has('mouse')
 endif
 
 " Set the command window height to 2 lines, to avoid many cases of having to
-" "press <Enter> to continue"
+" press <Enter> to continue
 set cmdheight=2
 
 " Display line numbers on the left
@@ -171,4 +171,8 @@ set mouse-=a
 augroup FileTypeSettings
   autocmd!
   autocmd   Filetype   tex      setlocal   expandtab softtabstop=2 shiftwidth=2
+  autocmd   Filetype   plaintex      setlocal   expandtab softtabstop=2 shiftwidth=2
+  autocmd   Filetype   arduino		setlocal   expandtab softtabstop=2 shiftwidth=2
 augroup END
+
+"You must creat a ~/.vimrc so that things are not overwritten by the default values
