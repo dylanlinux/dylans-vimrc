@@ -176,3 +176,4 @@ augroup FileTypeSettings
 augroup END
 
 "You must creat a ~/.vimrc so that things are not overwritten by the default values
+"Also touch /root/.vimrc
