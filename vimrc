@@ -174,6 +174,7 @@ augroup FileTypeSettings
   autocmd   Filetype   plaintex      setlocal   expandtab softtabstop=2 shiftwidth=2
   autocmd   Filetype   arduino		setlocal   expandtab softtabstop=2 shiftwidth=2
   autocmd   Filetype   text		setlocal   expandtab softtabstop=2 shiftwidth=2
+  autocmd   Filetype   python		setlocal   expandtab softtabstop=4 shiftwidth=4
 augroup END
 
 "You must creat a ~/.vimrc so that things are not overwritten by the default values
