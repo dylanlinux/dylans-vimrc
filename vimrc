@@ -177,5 +177,4 @@ augroup FileTypeSettings
   autocmd   Filetype   python		setlocal   expandtab softtabstop=4 shiftwidth=4
 augroup END
 
-"You must creat a ~/.vimrc so that things are not overwritten by the default values
-"Also touch /root/.vimrc
+"sudo ln ~/.vimrc /root/.vimrc
