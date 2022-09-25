@@ -177,4 +177,4 @@ augroup FileTypeSettings
   autocmd   Filetype   python		setlocal   expandtab softtabstop=4 shiftwidth=4
 augroup END
 
-"sudo ln ~/.vimrc /root/.vimrc
+"sudo ln -s ~/.vimrc /root/.vimrc
