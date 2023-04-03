@@ -165,6 +165,13 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 "------------------------------------------------------------
 
+" Indents word-wrapped lines as much as the 'parent' line
+set breakindent
+" Ensures word-wrap does not split words
+set formatoptions=l
+set lbr
+
+
 let @p=':w:!ps€kbdflatex $€kb%'
 set mouse-=a
 
@@ -177,4 +184,5 @@ augroup FileTypeSettings
   autocmd   Filetype   python		setlocal   expandtab softtabstop=4 shiftwidth=4
 augroup END
 
-"sudo ln -s ~/.vimrc /root/.vimrc
+"ln -s ~/git/vimrc/vimrc ~/.vimrc
+"sudo ln -s ~/git/vimrc/vimrc /root/.vimrc
