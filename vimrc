@@ -170,6 +170,10 @@ set breakindent
 " Ensures word-wrap does not split words
 set formatoptions=l
 set lbr
+"Allows you to jk within a wrapped paragraph
+nnoremap <expr> j v:count ? (v:count > 5 ? "m'" . v:count : '') . 'j' : 'gj'
+nnoremap <expr> k v:count ? (v:count > 5 ? "m'" . v:count : '') . 'k' : 'gk'
+
 
 
 let @p=':w:!ps€kbdflatex $€kb%'
