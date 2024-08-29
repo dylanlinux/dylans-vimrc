@@ -186,6 +186,9 @@ nnoremap <expr> k v:count ? (v:count > 5 ? "m'" . v:count : '') . 'k' : 'gk'
 let @p=':w:!ps€kbdflatex $€kb%'
 set mouse-=a
 
+set cursorcolumn " Highlights the column that the cursor is on
+set cursorline " Highlights the line that the cursor is on
+
 augroup FileTypeSettings
   autocmd!
   autocmd   Filetype   tex      setlocal   expandtab softtabstop=2 shiftwidth=2
